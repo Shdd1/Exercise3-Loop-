@@ -5,19 +5,20 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 //Q1
-        /*for(int i=1;i<=100;i++)
-            if (i % 3 == 0) {
-                System.out.println("Fizz");
+        /* for(int i=1;i<=100;i++)
+
+            if (i % 5 != 0 && i % 3 != 0) {
+                System.out.println(i);
+            }else if (i % 5 == 0 && i % 3 == 0) {
+                System.out.println("FizzBuzz");
 
             } else if (i % 5 == 0) {
                 System.out.println("Buzz");
 
-            } else if (i % 5 == 0 && i % 3 == 0) {
-                System.out.println("FizzBuzz");
-
-            } else {
-                System.out.println(i);
+            }  else if (i % 3 == 0) {
+                    System.out.println("Fizz");
             }
+
         */
 
 
@@ -73,9 +74,9 @@ public class Main {
            System.out.println("plese inter a number :");
            num = input.nextInt();
            if (num % 2 != 0) {
-               odd_num++;
+               odd_num+=num;
            } else if (num % 2 == 0) {
-               even_num++;
+               even_num+=num;
            }
            if (loop == sum) {
                break;
